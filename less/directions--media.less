@@ -1,0 +1,157 @@
+@import "variables";
+
+@media @phone {
+    .directions {
+        height: auto;
+        background: url(../img/pattern--phone.png) center left no-repeat;
+        background-size: 70% 70%;
+        background-position-y: 50%;
+    }
+    .pattern {
+        max-width: 320px;
+        
+        &__background {
+            top: -130px;
+        }
+    
+        &__header {
+            font-size: 18px;
+            top: -10px;
+        }
+    }
+    
+    .side {
+        &--left {
+            .directionCard {
+                margin-bottom: 25px;
+            }
+        }
+        &--right {
+            .directionCard {
+                &__row {
+                    flex-direction: column;
+                    img {
+                        min-height: 200px;
+                        width: 100%;
+                    }
+                    .card--shadow {
+                        display: flex;
+                        flex-direction: row;
+                        padding: 0;
+                        align-items: inherit;
+                    }
+                }
+                margin-bottom: 25px;
+                &__info { 
+                    flex-basis: 85%;
+                }
+    
+                &__btn {
+                    flex-basis: 15%;
+                    height: auto;
+                    width: auto;
+                    margin: 0;
+                    .btn__angle {
+                        margin-left: 40%;
+                    }                
+                }            
+            }
+        }
+        &__btn {
+            font-size: 10px;
+            margin-top: 0;
+            height: 35px;
+        }
+    }
+    
+    .directionCard{
+        &__info {
+            padding: 15px 0px 15px 20px;
+            &__text {
+                h3 {
+                    font-size: 12px;
+                }
+                p {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media @tablet {
+    .pattern {
+        background-size: 105% 94%;
+        background-position-y: -48px;
+        padding-top: 30px;
+    
+        &__header {
+            font-size: 21px;
+            top: -50px;
+        }
+    
+        .row {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 900px; 
+            max-height: 720px;
+        }
+    }
+    
+    .side {
+        &--left {
+            .directionCard {
+                max-width: 265px;
+                &__row {
+                    width: 100%;
+                    height: 100%;
+                }
+                &__info {
+                    padding: 17px 0px 15px 30px;
+                }
+    
+                &__btn {
+                    flex-basis: 15%;
+                    .btn__angle {
+                        margin-left: 45%;
+                    }
+                }
+            }
+        }
+    
+        &--right {
+            .directionCard {
+                max-width: 350px;
+                max-height: 125px;
+                &__row img{
+                    max-width: 40%;
+                }
+    
+                &__btn {
+                    margin-top: 75px;
+                    margin-right: 15px;               
+                }            
+            }
+            .card--shadow {
+                display: flex;
+                padding: 15px 0px 15px 15px;
+            }
+        }
+    
+        &__btn {
+            height: 34px;
+            margin-top: 0px;
+        }
+    }
+    
+    .directionCard {        
+        &__info__text {
+            h3 {
+                font-size: 12px;
+            }
+            p {
+                font-size: 10px;
+            }
+        }
+    }
+}

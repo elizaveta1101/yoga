@@ -1,0 +1,71 @@
+@import "variables";
+
+@media @phone {
+
+}
+
+@media @tablet {
+    .review {
+        margin-bottom: 100px;
+
+        &__header {
+            font-size: 21px;
+            margin-bottom: 40px;
+        }
+    
+        &__slider {
+            .slider__info {
+                display: inherit;
+                max-width: 35px;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                line-height: 17px;
+                justify-content: space-between;
+                align-items: flex-end;
+
+                div{
+                    color: @font_color;
+                }
+                
+                .divider {
+                    display: inline-block;
+                    font-size: 17px;
+                    margin-left: 0;
+                    margin-right: 0;
+                    font-weight: 300;
+                }
+                .slider__number {
+                    font-size: 18px;
+                }
+                .slider__all {
+                    font-size: 14px;
+                }
+            }
+            .row {
+                max-width: 440px;
+                height: 730px;
+                padding-bottom: 30px;
+            }
+            &__btn {
+                top: 92%;
+    
+                &--prev {
+                    left: 28%;
+                }
+                &--next {
+                    right: 30%;
+                }
+            }
+            &__card {
+                max-width: 440px;
+                max-height: 310px;
+                position: initial;  
+                margin-bottom: 30px;       
+            }
+        }
+        .mark {
+            top: 48%;
+        }
+    }
+}

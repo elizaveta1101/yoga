@@ -1,0 +1,44 @@
+@import "variables";
+
+@media @phone {
+
+}
+
+@media @tablet {
+    .contacts {
+        background-image: url(../img/footer_background.png);
+        background-size: cover;
+        width: 100%;
+        padding: 0;
+        max-height: 700px;
+        height: 100%;
+        .side {
+            margin: 0;
+            &--left {
+                font-size: 14px;
+                background-color: #8373A1;
+                margin-left: auto;
+                margin-right: auto;
+                .row {
+                    flex-direction: row;
+                }
+            }
+            &--right {
+                max-width: 450px;
+                margin: 0 auto 50px;                    
+            }
+        }
+        &__container {
+            flex-direction: column-reverse;
+        }
+    }
+    div {
+        color: #fff;
+    }
+    .icons {
+        display: none;
+    }
+}
+    
+
+

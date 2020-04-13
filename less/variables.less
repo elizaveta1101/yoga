@@ -1,0 +1,163 @@
+.container--small {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+
+    @media @phone {
+        max-width: 300px;
+    }
+
+    @media @tablet {
+        max-width: 650px;
+    }
+
+    @media @desktop {
+        max-width: 1000px;
+    }
+}
+
+img {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+}
+
+@font_color: #8B7EAC;  
+@btn_color:  #E65C7B;
+@btn_color--hover: #E11745;
+@btn_color_light: #FCF8FEFF;
+@font_color--hover: #6D4793;
+@mark_color: rgba(174, 164, 200, 0.5);
+@shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+
+
+//---------для медиа запросов----------
+
+@phone: ~'(max-width: 767px)';
+@tablet: ~'(min-width: 768px) and (max-width: 1199px)';
+@desktop: ~'(min-width: 1200px) and (max-width: 1920px)';
+
+//--------------------------
+
+.medium {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: @font_color;
+}
+
+.bold {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    color: @font_color;
+}
+
+* {
+    .medium;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background-color: @btn_color_light;
+}
+
+
+.my_btn {
+    position: relative;
+    background-color: @font_color;
+    border: none;
+}
+
+.btn--prev {
+    border: 1px solid @font_color;
+    background-color: @btn_color_light;
+    .angle {
+        border-color: @font_color;
+        transform: translate(-25%, -50%) rotate(-45deg);
+    }
+    &:hover {
+        background-color: @font_color;
+        .angle {
+            border-color: #fff;
+        }
+    }
+}
+.btn--next {
+    &:hover {
+        background-color: @btn_color_light;
+        border: 1px solid @font_color;
+        .angle {
+            border-color: @font_color;
+        }
+    }
+}
+
+.angle {
+    border-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 2px;
+    border-top-width: 2px;
+    border-style: solid;
+    width: 10px;
+    height: 10px;
+    transform: translate(-75%, -50%) rotate(135deg);
+    @media @phone {
+        width: 8px;
+        height: 8px;
+        border-left-width: 1px;
+        border-top-width: 1px;
+    }
+}
+
+.btn--coral {
+    background-color: @btn_color;
+    border: none;
+    color: #fff;
+}
+
+.mark {
+    position: absolute;
+    right: 0;
+    display: block;
+    margin: 0;
+    background: none;
+    .bold;
+    font-size: 30px;
+    color: @mark_color;
+    padding: 0;
+    
+    hr {
+        display: inline-block;
+        border-top: 1px solid rgba(139, 126, 172, 0.73);
+        height: 0;
+        width: 50px;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+    
+    @media @phone {
+        display: none;
+    }
+
+    @media @tablet {
+        font-size: 18px;
+        hr {
+            width: 25px;
+        }
+    }
+    
+}
+
+.card--shadow {
+    box-shadow: @shadow;
+    width: 100%;
+}
+
+.btn--shadow {
+    box-shadow: @shadow;
+}

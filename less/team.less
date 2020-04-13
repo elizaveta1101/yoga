@@ -1,0 +1,172 @@
+@import "variables";
+
+.team {
+    position: relative;
+    text-align: center;
+    height: 800px; 
+
+    &__background {
+        z-index: -9999999;
+        position: absolute;
+        top: 0;
+        &--left {
+            left: 0;
+        }
+        &--right {
+            right: 0;
+        }
+    }
+    &__data {
+        height: 100%;
+        .row {
+            height: 80%;
+        }
+        &__header {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 65px;
+        }
+        &__workers {
+            .worker {
+                position: relative;
+                margin-bottom: 30px;
+                max-height: 160px;
+                height: 100%;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &__photo {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 99999;
+                }
+
+                &__card {
+                    position: absolute;
+                    top: 50px;
+                    left: 25px;
+                    background-color: #fff;
+                    max-width: 400px;
+                    max-height: 110px;
+                    width: 100%;
+                    height:auto;
+                    padding: 20px 25px 20px 140px;
+
+                    .row {
+                        
+                        .side {
+                            font-size: 12px;
+                            
+                            &--left {
+                                text-align-last: left;
+                                .name {
+                                    color: @btn_color;
+                                }
+                                .direction {
+                                    margin: 0;
+                                }
+                            }
+
+                            &--right {
+                                text-align: right;
+                                a .icon {
+                                    margin-bottom: 40px;    
+                                    &--left {
+                                        margin-right: 10px;
+                                    }
+                                } 
+                                .link {
+                                    color: @font_color;
+                                    text-decoration: underline;
+                                    &:hover {
+                                        color: @font_color--hover;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }   
+        }
+
+        &__achievements {
+            .worker {
+                text-align: left;
+                display:none;
+
+                &__name {
+                    .bold;
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                    margin-top: 50px;
+                }
+
+                &__experience {
+                    font-size: 14px;
+                    color: @btn_color;
+                    margin-bottom: 25px;
+                }
+
+                &__achievements {
+                    font-size: 12px;
+                }
+
+                &--visible {
+                    display: block;
+                }
+            }
+        }
+
+        .slider {
+            margin-top: 40px;
+            float: right;
+            margin-right: 45px;
+            max-width: 150px;
+            width: 100%;
+
+            .row {
+                width: 100%;
+                justify-content: space-between;
+                margin: 0;
+            }
+            
+            &__btn {
+                width: 45px;
+                height: 30px;
+                
+            }
+
+            &__number {
+                font-size: 16px;
+                display: inline-block;
+            }
+            &__all {
+                font-size: 13px;
+                display: inline-block;
+            }
+            &__info {
+                max-width: 35px;
+                width: 100%;
+                
+                div{
+                    color: @font_color;
+                }
+                
+                .divider {
+                    display: inline-block;
+                    font-size: 17px;
+                    margin-left: 0;
+                    margin-right: 0;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+
+    .mark {
+        transform: translateY(-50%);
+        top: 50%;
+    }
+}

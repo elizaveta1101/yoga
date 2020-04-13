@@ -1,0 +1,150 @@
+@import "variables";
+
+header {
+    background: url(../img/main_background.png) center center no-repeat;
+    background-size: cover;
+    min-height: 850px;
+    //height: 100vh;
+    padding-bottom: 130px;
+    position: relative;
+    .header {
+        &__content {
+            padding-top: 30px; 
+            margin-bottom: 100px;
+            position: relative;
+        }
+        &__bar {  
+            margin: 0; 
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 100px;
+
+            &__menu {
+                height: 25px;
+                position: relative;
+            }
+            &__menu span, &__menu p, &__phone a{
+                display: inline-block;
+                font-size: 16px;
+                cursor: pointer;
+                vertical-align: bottom;
+                margin-bottom: 0;
+                color: @font_color;
+                            
+            }
+            &__menu span{
+                hr{
+                    width: 24px;
+                    background-color: #8e80a9;
+                    height: 0px;
+                    text-align: left;
+                    margin: 4px;
+                    padding: 0;
+                    
+                }
+                .unique {
+                    width: 15px;
+                    margin-bottom: 6px;
+                }
+            }
+
+            &__phone a:hover {
+                text-decoration: none;
+            }
+        } 
+        &__logo {
+            text-align: center;
+            h1{        
+                font-size: 200px;
+                color: #fff;
+                text-shadow: 0px 4px 50px rgba(131, 115, 161, 0.5);
+            }
+            h3 {
+                font-family: Caveat, sans-serif;
+                position: absolute;
+                left: 35%;
+                transform: translateX(-25%);
+            }
+        }
+        &__btn {
+            display: flex;
+            margin-bottom: 130px;
+            max-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+
+            p {
+                margin-bottom: 0;
+                margin-left: 13px;
+                color: @btn_color;
+                font-size: 14px;
+                text-align: left;
+            }   
+            &--size {
+                padding: 14px 11px 14px 25px;
+                
+            }
+            &:hover {
+                .my_btn {
+                    background-color: @btn_color--hover;
+                }
+                p {
+                    color: @btn_color--hover;
+                }
+                
+            }
+            
+        }
+
+        &__footer {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__icons img {
+            margin-right: 11px;
+        }
+        &__icons img:last-child {
+            margin-right: 0;
+        }   
+    }
+    .mark {
+        top: 40%;
+    }
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+#dropdownMenuButton {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    &:hover {
+        p {
+            color: @font_color--hover;
+        }
+        span hr {
+            border-color: @font_color--hover;
+        }
+    }
+}
+
+.dropdown__menu {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.6);
+    opacity: 60%;
+    position: absolute;
+    top: 27px;
+    left: 0;
+    width: auto;
+    height: auto;
+    a {
+        color: @font_color;
+        font-size: 17px;
+        &:hover, &:visited {
+            color: @font_color;
+        }
+    }
+}
+

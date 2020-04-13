@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans:400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <title>Yoga</title>
+</head>
+<body>
+    <header class="container-fluid" id="header">
+        <div class="header__content container--small">
+            <div class="row header__bar">
+                <div class="header__bar__menu">
+                    <button type="button" id="dropdownMenuButton">
+                        <span>
+                            <hr>
+                            <hr>
+                            <hr class="unique">
+                        </span>
+                        <p>Меню</p>
+                    </button>
+                    <div class="dropdown__menu">
+                        <a class="dropdown-item" href="#header">Главная</a>
+                        <a class="dropdown-item" href="#directions">Направления</a>
+                        <a class="dropdown-item" href="#subscription">Абонементы</a>
+                        <a class="dropdown-item" href="#team">Наша команда</a>
+                        <a class="dropdown-item" href="#review">Отзывы</a>
+                        <a class="dropdown-item" href="#contacts">Контакты</a>
+                    </div>
+                </div>
+                <div class="header__bar__phone">
+                    <a href="+78126901010" >8 (812) 690-10-10</a>
+                </div>
+            </div>
+            <div class="header__logo">
+                <h3>Почувствуй расслабление в своем теле</h3>
+                <h1> Y O G A </h1>
+            </div>
+            <div class="header__btn">
+                <button class="header__btn--size my_btn btn--coral">
+                    <div class="angle"></div>
+                </button>
+                <p>Запишитесь на бесплатное пробное занятие</p>
+            </div>
+            <div class="header__footer row">
+                <div class="header__icons">
+                    <img src="./img/vk.png" alt="vk">
+                    <img src="./img/twitter.png" alt="twitter">
+                    <img src="./img/facebook.png" alt="facebook">
+                </div>
+                <div class="header__city">
+                    <p>Санкт-Петербург</p>
+                </div>            
+            </div>
+        </div>
+        <span class="mark">01<hr></span>
+    </header>
+    <div class="directions container-fluid" id="directions">
+        <div class="container--small pattern">
+            <h2 class="pattern__header">Направления</h2>
+            <!-- <img class= "pattern__background" src="./img/pattern.png" alt=""> -->
+            <div class="row">
+                <div class="side side--left col-lg-5 col-md-5">
+                    <div class="directionCard">
+                        <img src="./img/directions/hatha.png" alt="">
+                        <div class="directionCard__row card--shadow">
+                            <div class="directionCard__info">
+                                <div class="directionCard__info__text">
+                                    <h3 class="text__header">Хатха-йога</h3>
+                                    <p class="text__time">Пн, Ср, Пт – с 12:00 до 15:00<br>Вт, Чт – с 18:00 до 21:00 </p>
+                                    <p class="text__name">Инструктор<br>Емельянова Полина</p>
+                                </div>
+                            </div>
+                            <button class="directionCard__btn my_btn">
+                                        <div class="angle"></div>               
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="side side--right col-lg-7 col-md-7">
+                    <div class="directionCard">
+                        <div class="directionCard__row">
+                            <img src="./img/directions/ashatanga.png" alt="">
+                                <div class="card--shadow">
+                                <div class="directionCard__info">
+                                    <div class="directionCard__info__text">
+                                        <h3 class="text__header">Ашатанга-йога</h3>
+                                        <p class="text__time">Пн, Ср, Пт – с 11:00 до 14:00<br>Вт, Чт – с 19:00 до 21:00 </p>
+                                        <p class="text__name">Инструктор<br>Емельянова Полина</p>
+                                    </div>
+                                </div>
+                                <button class="directionCard__btn my_btn">
+                                    <div class="angle"></div>               
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="directionCard">
+                        <div class="directionCard__row">
+                            <img src="./img/directions/cundalini.png" alt="">
+                            <div class="card--shadow">
+                                <div class="directionCard__info">
+                                    <div class="directionCard__info__text">
+                                        <h3 class="text__header">Кундалини-йога</h3>
+                                        <p class="text__time">Пн, Ср, Пт – с 12:00 до 15:00<br>Вт, Чт – с 18:00 до 21:00 </p>
+                                        <p class="text__name">Инструктор<br>Емельянова Полина</p>
+                                    </div>
+                                </div>
+                                <button class="directionCard__btn my_btn">
+                                    <div class="angle"></div>               
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="side__btn btn--shadow">Смотреть больше</button>
+                </div>
+            </div>  
+        </div>
+        <span class="mark">02<hr></span>
+    </div>
+    <div class="subscription container-fluid" id="subscription">
+        <div class="subscription__data container--small">
+            <h2 class="subscription__data__header">Абонементы</h2>
+            <nav class="subscription__data__month">
+                <p class="one">1 месяц</p>
+                <p class="six">6 месяцев</p>
+                <p class="twelve">12 месяцев</p>
+            </nav>
+            <div class="subscription__data__cards">
+                <div class="row one_month">
+                    <div class="subscriptionCard card--small card--shadow">
+                        <h3 class="subscriptionCard__header">Утро 1</h3>
+                        <div class="subscriptionCard__time">Посещение<br>с 11:00 до 16:00</div>
+                        <div class="subscriptionCard__price">1 300 Р</div>
+                        <button class="subscriptionCard__btn">Заказать абонемент</button>
+                    </div>
+                    <div class="subscriptionCard card--big card--shadow">
+                        <h3 class="subscriptionCard__header">Безлимит 1</h3>
+                        <div class="subscriptionCard__time">Посещение не ограничено<br>по времени</div>
+                        <div class="subscriptionCard__price">2 800 Р</div>
+                        <button class="subscriptionCard__btn">Заказать абонемент</button>
+                    </div>
+                    <div class="subscriptionCard card--small card--shadow">
+                        <h3 class="subscriptionCard__header">Вечер 1</h3>
+                        <div class="subscriptionCard__time">Посещение<br>с 17:00 до 21:00</div>
+                        <div class="subscriptionCard__price">2 000 Р</div>
+                        <button class="subscriptionCard__btn">Заказать абонемент</button>
+                    </div>
+                </div>
+                <div class="row six_month">
+                    <div class="subscriptionCard card--small card--shadow">
+                        <h3 class="subscriptionCard__header">Утро 6</h3>
+                        <div class="subscriptionCard__time">Посещение<br>с 11:00 до 16:00</div>
+                        <div class="subscriptionCard__price">1 300 Р</div>
+                        <button class="subscriptionCard__btn">Заказать абонемент</button>
+                    </div>
+                    <div class="subscriptionCard card--big card--shadow">
+                        <h3 class="subscriptionCard__header">Безлимит 6</h3>
+                        <div class="subscriptionCard__time">Посещение не ограничено<br>по времени</div>
+                        <div class="subscriptionCard__price">2 800 Р</div>
+                        <button class="subscriptionCard__btn">Заказать абонемент</button>
+                    </div>
+                    <div class="subscriptionCard card--small card--shadow">
+                        <h3 class="subscriptionCard__header">Вечер 6</h3>
+                        <div class="subscriptionCard__time">Посещение<br>с 17:00 до 21:00</div>
+                        <div class="subscriptionCard__price">2 000 Р</div>
+                        <button class="subscriptionCard__btn">Заказать абонемент</button>
+                    </div>
+                </div>
+                <div class="row twelve_month">
+                    <div class="subscriptionCard card--small card--shadow">
+                        <h3 class="subscriptionCard__header">Утро 12</h3>
+                        <div class="subscriptionCard__time">Посещение<br>с 11:00 до 16:00</div>
+                        <div class="subscriptionCard__price">1 300 Р</div>
+                        <button class="subscriptionCard__btn">Заказать абонемент</button>
+                    </div>
+                    <div class="subscriptionCard card--big card--shadow">
+                        <h3 class="subscriptionCard__header">Безлимит 12</h3>
+                        <div class="subscriptionCard__time">Посещение не ограничено<br>по времени</div>
+                        <div class="subscriptionCard__price">2 800 Р</div>
+                        <button class="subscriptionCard__btn">Заказать абонемент</button>
+                    </div>
+                    <div class="subscriptionCard card--small card--shadow">
+                        <h3 class="subscriptionCard__header">Вечер 12</h3>
+                        <div class="subscriptionCard__time">Посещение<br>с 17:00 до 21:00</div>
+                        <div class="subscriptionCard__price">2 000 Р</div>
+                        <button class="subscriptionCard__btn">Заказать абонемент</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="mark">03<hr></span>
+    </div>
+    <div class="team container-fluid" id="team">
+        <img class="team__background team__background--left" src="./img/pattern4_1.png" alt="">
+        <img class="team__background team__background--right" src="./img/pattern4_2.png" alt="">
+        <div class="team__data container--small">
+            <h2 class="team__data__header">Наша команда</h2>
+            <div class="row">
+                <div class="team__data__workers col-lg-6 col-md-6">
+                    <div class="worker worker--1">
+                        <img class="worker__photo" src="./img/team/1.png" alt="">
+                        <div class="worker__card card--shadow">
+                            <div class="row">
+                                <div class="side side--left col-lg-6 col-md-6">
+                                    <p class="name">Инструктор<br>Серёжа Попов</p>
+                                    <p class="direction">Хатха-йога</p>
+                                </div>
+                                <div class="side side--right col-lg-6 col-md-6">
+                                    <a href="#"><img class="icon icon--left" src="./img/vk.png" alt=""></a>
+                                    <a href="#"><img class="icon"src="./img/twitter.png" alt=""></a>
+                                    <a href="#" class="link">Смотреть</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="worker worker--2">
+                        <img class="worker__photo" src="./img/team/1.png" alt="">
+                        <div class="worker__card card--shadow">
+                            <div class="row">
+                                <div class="side side--left col-lg-6 col-md-6">
+                                    <p class="name">Инструктор<br>Серёжа Попов</p>
+                                    <p class="direction">Хатха-йога</p>
+                                </div>
+                                <div class="side side--right col-lg-6 col-md-6">
+                                    <a href="#"><img class="icon icon--left" src="./img/vk.png" alt=""></a>
+                                    <a href="#"><img class="icon"src="./img/twitter.png" alt=""></a>
+                                    <a href="#" class="link">Смотреть</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="worker worker--3">
+                        <img class="worker__photo" src="./img/team/1.png" alt="">
+                        <div class="worker__card card--shadow">
+                            <div class="row">
+                                <div class="side side--left col-lg-6 col-md-6">
+                                    <p class="name">Инструктор<br>Серёжа Попов</p>
+                                    <p class="direction">Хатха-йога</p>
+                                </div>
+                                <div class="side side--right col-lg-6 col-md-6">
+                                    <a href="#"><img class="icon icon--left" src="./img/vk.png" alt=""></a>
+                                    <a href="#"><img class="icon"src="./img/twitter.png" alt=""></a>
+                                    <a href="#" class="link">Смотреть</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                            <div class="row">
+                                <button class="slider__btn slider__btn--prev btn--prev my_btn">
+                                    <div class="angle"></div>  
+                                </button>
+                                <div class="slider__info">
+                                    <div class="slider__number">1</div>
+                                    <div class="divider">/</div>
+                                    <div class="slider__all">9</div>
+                                </div>
+                                <button class="slider__btn slider__btn--next btn--next my_btn">
+                                    <div class="angle"></div>
+                                </button>
+                            </div>  
+                        </div>
+                </div>
+                <div class="team__data__achievements col-lg-6 col-md-6">
+                    <div class="worker worker--1 worker--visible">
+                        <h3 class="worker__name">Серёжа Попов</h3>
+                        <p class="worker__experience">Опыт преподавания: 8 лет</p>
+                        <p class="worker__achievements">Образование и опыт работы: Практикует с 2011 года, является 
+                                сертифицированным инструктором по флоу- йоге. Большой опыт преподавания
+                                йоги для начинающих и продолжающих.<br><br>Обучался в Индии (International Association of Yoga: classical yoga, 
+                                master of principles yoga therapy), Непале (опыт медитативных
+                                и дыхательных техник, проживание в Ашраме), Москва (Аштанга йога 
+                                центр 108 А. Константинова), Московский центр классической 
+                                йоги Виктора Бойко.<br><br>Сертифицированный инструктор по фитнесу и йоге (БГУФК), 
+                                по массажу (Оздоровительный Витал – центр №401).<br><br>Организатор и участник многочисленных конвенций
+                                и семинаров по йоге, медитативным техникам 
+                                и здоровому питанию.</p>
+                    </div>
+                    <div class="worker worker--2">
+                        <h3 class="worker__name">Серёжа Попов</h3>
+                        <p class="worker__experience">Опыт преподавания: 8 лет</p>
+                        <p class="worker__achievements">Образование и опыт работы: Практикует с 2011 года, является 
+                                сертифицированным инструктором по флоу- йоге. Большой опыт преподавания
+                                йоги для начинающих и продолжающих.<br><br>Обучалась в Индии (International Association of Yoga: classical yoga, 
+                                master of principles yoga therapy), Непале (опыт медитативных
+                                и дыхательных техник, проживание в Ашраме), Москва (Аштанга йога 
+                                центр 108 А. Константинова), Московский центр классической 
+                                йоги Виктора Бойко.<br><br>Сертифицированный инструктор по фитнесу и йоге (БГУФК), 
+                                по массажу (Оздоровительный Витал – центр №401).<br><br>Организатор и участник многочисленных конвенций
+                                и семинаров по йоге, медитативным техникам 
+                                и здоровому питанию.</p>
+                    </div>
+                    <div class="worker worker--3">
+                        <h3 class="worker__name">Серёжа Попов</h3>
+                        <p class="worker__experience">Опыт преподавания: 8 лет</p>
+                        <p class="worker__achievements">Образование и опыт работы: Практикует с 2011 года, является 
+                                сертифицированным инструктором по флоу- йоге. Большой опыт преподавания
+                                йоги для начинающих и продолжающих.<br><br>Обучалась в Индии (International Association of Yoga: classical yoga, 
+                                master of principles yoga therapy), Непале (опыт медитативных
+                                и дыхательных техник, проживание в Ашраме), Москва (Аштанга йога 
+                                центр 108 А. Константинова), Московский центр классической 
+                                йоги Виктора Бойко.<br><br>Сертифицированный инструктор по фитнесу и йоге (БГУФК), 
+                                по массажу (Оздоровительный Витал – центр №401).<br><br>Организатор и участник многочисленных конвенций
+                                и семинаров по йоге, медитативным техникам 
+                                и здоровому питанию.</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <span class="mark">04<hr></span>
+    </div>
+    <div class="review container-fluid" id="review">
+        <div class="container-small">
+            <h3 class="review__header">Отзывы</h3>
+            <div class="review__slider">
+                <div class="row">
+                    <button class="review__slider__btn review__slider__btn--prev btn--prev my_btn">
+                        <div class="angle"></div>  
+                    </button>
+                    <div class="review__slider__card card--left card--shadow">
+                        <img class="card__header" src="./img/“.png">
+                        <p class="card__text">11111Хожу на йогу вечером, чтобы расслабиться 
+                                после  тяжелого трудового дня. И после занятий 
+                                наступает спокойствие!<br><br>Йога это отличный способ быстро
+                                и качественно расслабиться.<br>Спасибо инструктору Марине.</p>
+                        <div class="card__row">
+                            <img src="./img/review/1.png" alt="" class="card__photo">
+                            <div class="author__info">   
+                                <p class="card__name">Серёжа Попов</p>
+                                <p class="card__date">16 мая 2018</p>  
+                                <a href="#"><img class="icon icon--left" src="./img/vk.png" alt=""></a>
+                                <a href="#"><img class="icon"src="./img/twitter.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review__slider__card card--right card--shadow">
+                        <img class="card__header" src="./img/“.png">
+                        <p class="card__text">22222Хожу на йогу вечером, чтобы расслабиться 
+                                после  тяжелого трудового дня. И после занятий 
+                                наступает спокойствие!<br><br>Йога это отличный способ быстро
+                                и качественно расслабиться.<br>Спасибо инструктору Марине.</p>
+                        <div class="card__row">
+                            <img src="./img/review/1.png" alt="" class="card__photo">
+                            <div class="author__info">   
+                                <p class="card__name">Серёжа Попов</p>
+                                <p class="card__date">16 мая 2018</p>  
+                                <a href="#"><img class="icon icon--left" src="./img/vk.png" alt=""></a>
+                                <a href="#"><img class="icon"src="./img/twitter.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review__slider__card card--shadow">
+                        <img class="card__header" src="./img/“.png">
+                        <p class="card__text">333333Хожу на йогу вечером, чтобы расслабиться 
+                                после  тяжелого трудового дня. И после занятий 
+                                наступает спокойствие!<br><br>Йога это отличный способ быстро
+                                и качественно расслабиться.<br>Спасибо инструктору Марине.</p>
+                        <div class="card__row">
+                            <img src="./img/review/1.png" alt="" class="card__photo">
+                            <div class="author__info">   
+                                <p class="card__name">Серёжа Попов</p>
+                                <p class="card__date">16 мая 2018</p>  
+                                <a href="#"><img class="icon icon--left" src="./img/vk.png" alt=""></a>
+                                <a href="#"><img class="icon"src="./img/twitter.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__info">
+                        <div class="slider__number">1</div>
+                        <div class="divider">/</div>
+                        <div class="slider__all">9</div>
+                    </div>
+                    <button class="review__slider__btn review__slider__btn--next btn--next my_btn">
+                        <div class="angle"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <span class="mark">05<hr></span>
+    </div>
+    <div class="contacts container-fluid" id="contacts">
+        <div class="contacts__container">
+                <div class="side side--left col-xl-6">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-4">
+                            <div class="address">
+                                <div class="address__header">Адрес:</div>
+                                <div class="address__place">Московский проспект, 22</div>
+                            </div>
+                            <div class="time">
+                                <div class="time__header">График работы:</div>
+                                <div class="time__days">Пн-Вс с 11:00 до 21:00</div>
+                            </div>
+                            <div class="icons">
+                                <a href="#"><img src="./img/vk.png" alt=""></a>
+                                <a href="#"><img src="./img/twitter.png" alt=""></a>
+                                <a href="#"><img src="./img/facebook.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="phone">
+                                <div class="phone__header">Телефон:</div>
+                                <div class="phone__number">8 (812) 690-10-10</div>
+                            </div>
+                            <div class="email">
+                                <div class="email__header">Email:</div>
+                                <div class="email__address">yogaspb@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="side side--right col-lg-6">
+                    <form action="" class="free__class">
+                        <h2 class="form__header">Запишитесь на бесплатное<br>пробное занятие</h2>
+                        <input type="text" class="form__name" placeholder="Ваше имя">
+                        <input type="text" class="form__phone" placeholder="Вaш телефон">
+                        <button class="form__btn btn--coral">Оставить заявку</button>
+                    </form>
+                </div>
+            
+        </div>
+    </div>
+    <footer class="container-fluid">
+        <div class="container--small">
+                <a href="#" class="link">Yogaspb.com</a>
+                <a href="#" class="politic">© 2018 Все права защищены</a>
+        </div>       
+    </footer>
+
+    <!------------- модальные окна --------------->
+    <div class="trial__lesson">
+    </div>
+
+
+    
+    <script src="./index.js"></script>
+</body>
+</html>

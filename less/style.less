@@ -1,0 +1,49 @@
+@import "header";
+@import "directions";
+@import "subscription";
+@import "team";
+@import "review";
+@import "contacts";
+@import "footer";
+@import "header--media";
+@import "directions--media";
+@import "subscription--media";
+@import "team--media";
+@import "review--media";
+@import "contacts--media";
+
+
+
+
+//-------------------------те классы---------------
+.card--small {
+    width: 260px;
+    height: 240px;
+    button {
+        display: none;
+        @media @phone {
+            display: block;
+        }
+    }
+    @media @tablet {
+        width: 175px;
+        height: 160px;
+    }
+}
+
+.card--big {
+    width: 330px;
+    height: 330px;
+    @media @phone {
+        height: 240px;
+    }
+    @media @tablet {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+.display--visible {
+    display: block;
+}
+//------------------------------------------------

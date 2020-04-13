@@ -1,0 +1,112 @@
+@import "variables";
+
+@media @phone {
+    .team {
+        margin-top: 50px;
+    
+        &__background {
+            &--right {
+                display: none;
+            }
+        }
+        &__data {
+            max-width: 650px;
+
+            &__header {
+                font-size: 18px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+
+@media @tablet {
+    .team {
+        margin-top: 50px;
+        height: 560px;
+        
+        &__background {
+            &--left {
+                width: 60%;
+            }
+            &--right {
+                display: none;
+            }
+        }
+        &__data {
+            max-width: 650px;
+    
+            &__header {
+                font-size: 21px;
+                margin-bottom: 25px;
+            }
+            &__workers {
+                .worker {
+                    max-height: 120px;
+                    height: 100%;
+
+                    &__photo {
+                        width: 30%;
+                    }
+                    &__card {
+                        top: 35px;
+                        max-width: 260px;
+                        max-height: 80px;
+                        padding: 8px 0 8px 80px;
+    
+                        .row {
+                            width: 100%;
+                            margin: 0;
+                            
+                            .side {
+                                font-size: 11px;
+                                padding: 0;
+    
+                                &--left {
+                                    flex-basis: 55%;                                
+                                }
+                                &--right {
+                                    flex-basis: 40%;
+                                    a .icon {
+                                        margin-bottom: 35px;
+                                        width: 17%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }   
+            }
+    
+            &__achievements {
+                .worker {
+                    &__name {
+                        .bold;
+                        font-size: 16px;
+                        margin-top: 0;
+                        margin-bottom: 10px;
+                    }
+                    &__experience {
+                        font-size: 12px;
+                        margin-bottom: 15px;
+                    }
+                    &__achievements{
+                        font-size: 11px;
+                    }
+                }
+            }
+    
+            .slider {
+                margin: 0;
+
+                &__btn {
+                    width: 40px;
+                    height: 25px
+                }
+            }
+        }
+        .mark {
+            top: 30%;
+        }
+    }  
+}
